@@ -13,23 +13,40 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     *{margin:0;padding:0;}
-    body{font-family: Outfit;box-sizing: border-box;}
+    body{font-family: 'Outfit', sans-serif;box-sizing: border-box;height: 100vh}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .qr-block {
+      background-color: hsl(212, 45%, 89%);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .qr-section{
+      margin: 4rem 0;
       max-width: 250px;
       border-radius: 8px;
       background-color: #fff;
-      margin: 0 auto;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     .qr-section .img {
       padding: 16px;
       overflow: hidden;
     }
     .qr-section .img img {width: 100%;border-radius: 8px;}
-    .sub-section{padding: 16px;padding-top: 0;text-align: center;}
-    .sub-section .title {font-size: 1rem;font-weight: 500;color:hsl(218, 44%, 22%)}
-    .sub-section .sub-title {font-size: 12px;color:hsl(216, 15%, 48%);}
+    .sub-section{
+      padding: 16px;
+      padding-top: 0;
+      text-align: center;}
+    .sub-section .title {
+      font-size: 1rem;
+      font-weight: 500;
+      color:hsl(218, 44%, 22%)}
+    .sub-section .sub-title {
+      font-size: 12px;
+      color:hsl(216, 15%, 48%);
+    }
     .sub-section p+p{padding-top: 16px;}
   </style>
 </head>
@@ -38,7 +55,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Mogivara luffy</a>.
   </div>
-  <section style="background-color: hsl(212, 45%, 89%);padding: 4rem 0;">
+  <section class="qr-block">
     <div class="qr-section">
       <div class="img">
         <img src="./images/image-qr-code.png"/>
